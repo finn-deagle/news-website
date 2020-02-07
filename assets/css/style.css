@@ -1,0 +1,409 @@
+@font-face {
+    font-family: sans-serif;
+}
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+} 
+
+/* ===============================================  CSS FOR HEADER ================================== */
+
+.top-header {
+    font-weight: 700;
+    padding: 12px 0px;
+    background: whitesmoke; 
+    color: #7b7b7b;
+    font-size: 12px;
+}
+.phone {
+	text-align: right;
+}
+.phone a {
+	color: #7b7b7b; 
+}
+.phone a:hover {
+	color: #fc4a00; 
+	text-decoration: none;
+}
+.mid-header {
+    padding: 25px 0px;
+}
+.header-icon {
+	padding: 10px 0px;
+	text-align: right;
+}
+.header-icon a {
+    color: #222;
+}
+.header-icon i {
+    font-size: 13px;
+    margin-left: 16px;
+}
+.header-icon a {
+    color: #222;
+}
+.header-icon i:hover {
+    color: #f84270;
+}
+.bottom-header {
+	background-image: linear-gradient(90deg,#f84270 0%,#fe803b 100%);
+	height: 70px;
+}
+.main-menu {
+    position: relative;
+}
+.menubar {
+	list-style-type: none;
+	padding: 0px;
+	margin-bottom: 0px;
+}
+.menubar li.menubar-item {
+	display: inline-block;
+    padding: 24px 20px;
+}
+.menubar-item:hover {
+    background: #ffffff50;
+}
+.active {
+    background: #ffffff50;
+}
+.menubar-item:hover a {
+    text-decoration: none;
+}
+.menubar-item a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+.search-bar {
+    color: #fff; 
+    text-decoration: none;
+    background-color: transparent;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    background: #ffffff50;
+    padding: 20px;
+    font-size: 20px;
+}
+.search-container {
+    background: #363B40; 
+    padding: 20px 0px; 
+    color: #fff;
+}
+.search-container {
+    display: none;
+}
+.search-container input[type=text]{
+    background: #363b40;
+    border: none;
+    color: white !important;
+    width: 100%;
+    font-size: 24px;
+}
+.search-container input[type=text]:focus{
+    outline: none;
+}
+
+/* =============================================== CSS FOR SLIDER =================================== */ 
+.slider {
+    margin-bottom: 25px;
+}
+.carousel-item {
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+    position: relative;
+}
+.carousel-wrapper {
+  position: relative;
+}
+.carousel-img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+}
+.carousel-wrapper .date-time {
+    border-bottom: none !important;
+    color: #fff !important;
+}.carousel-wrapper .date-time span {
+    color: #fff !important;
+}
+.slide-text {
+    position: absolute;
+    left: 15px;
+    bottom: 5px;
+    color: #fff;
+    z-index: 1000;
+    opacity: .5;
+    transition: .5s;
+}
+.slide-text h6 {
+    font-weight: 700;
+}
+.overlay {
+    background: #f8426f61;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    height: 100%;
+    z-index: 10000;
+    margin: 0px auto;
+    width: 96.5%;
+    transition: .5s;
+}
+.carousel-wrapper:hover .slide-text {
+    opacity: 1;
+}
+.carousel-wrapper:hover .overlay {
+    background: #840222b5;
+}
+
+/* =============================================== CSS FOR FOOTER =================================== */ 
+
+footer {
+	background: #363B40;
+}
+.top-footer {
+    padding: 50px 0px 35px 0px;
+    color: #fff;
+}
+.top-footer h6 span {
+    padding: 10px 0px;
+    border-bottom: 1px solid #f84270;
+}
+.footer-logo {
+    padding: 28px 0px 14px 0px;
+}
+
+.bottom-footer {
+    border-top: 1px solid #c1c1c1; 
+    color: #c1c1c1;
+    font-size: 12px;
+    padding: 12px 0px;
+}
+.footer-links {
+    padding: 0px;
+    list-style-type: none;
+    margin-top: 30px;
+}
+.footer-links li {
+    padding: 5px 0px;
+    font-size: 14px;
+}
+.footer-links li a {
+    color: #fe803b;
+}
+.footer-contact ul {
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 30px; 
+}
+.footer-contact li {
+    padding: 5px 0px;
+    font-size: 14px;
+}
+.footer-contact li a {
+    color: #fff; 
+}
+.footer-contact li a:hover {
+    text-decoration: none;
+    color: lightgray;
+}
+.footer-icon{
+    margin-top: 35px; 
+}
+.footer-icon a {
+    padding-right: 14px; 
+    color: #fe803b;
+    font-size: 16px;
+}
+.footer-icon a:hover { 
+    color: lightgray;
+}
+.footer-category li a {
+    color: #fff !important;
+}
+.footer-category li a:hover {
+    color: lightgray !important;
+}
+
+/* ====================================== COMMAN CSS FOR ALL PAGE =============================== */
+
+.post-tag {
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    padding: 3px 5px;
+    letter-spacing: .5px;
+    z-index: 100;
+    box-shadow: 3px 3px 0px #fff;
+}
+.post-tag-position {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.background-green {
+    background: green;
+} 
+.background-primary {
+    background: #f84270;
+} 
+.background-secondry {
+    background: #fe803b;
+} 
+.background-blue {
+    background: #007bff;
+} 
+
+/* ====================================== CSS FOR INDEX PAGE ==================================== */
+
+section {
+    margin-top: 30px;
+}
+.main-title h6 {
+    border-left: 3px solid #f84270;
+    border-bottom: 2px solid #e2e2e2;
+    padding-left: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;  
+}
+.main-title span {
+    display: inline-block;
+    background-image: linear-gradient(90deg,#f84270 0%,#fe803b 100%);
+    padding: 8px;
+}
+.post-img-wapper {
+    margin: 20px 0px; 
+    position: relative;
+    margin-bottom: 35px;
+}
+.post-img-wapper img {
+    width: 100%;
+    height: 200px;
+}
+.date-time {
+    border-bottom: 2px solid #e2e2e2;
+    padding-bottom: 8px;
+}
+.date-time span {
+    color: #f84270;
+    font-size: 14px;
+    margin-right: 12px;
+}
+.date-time span i {
+    margin-right: 6px;
+    font-size: 14px;
+}
+.post-title {
+    margin: 20px 0px 10px 0px;
+}
+.post-title a {
+    font-weight: 700;
+    font-size: 16px;
+    color: #696969;
+}
+.post-title a:hover {
+    color: #f84270;
+    text-decoration: none;
+}
+.subscribe-wrapper {
+    margin-bottom: 30px;
+}
+.subscribe-input input[type=text] {
+    width: 100%;
+    padding: 8px 12px;
+    display: block;
+    border-radius: 2px;
+    font-size: 14px;
+    background: #ececec;
+    border: none; 
+    border: 2px solid lightgray;
+    margin-top: 18px; 
+}
+.subscribe-input input[type=text]:focus {
+    outline: 2px solid #f84270;
+}
+.subscribe-button {
+    border-radius: 2px;
+    font-size: 16px;
+    width: 100%;
+    color: #f84270;
+    font-weight: 500;
+    border: none; 
+    border: 2px solid  #f84270;
+    padding: 5px;
+    margin-top: 15px;
+    background-color: #fff;
+}
+.subscribe-button:hover {
+    color: #fe803b;
+    border: 2px solid #fe803b;
+}
+.follower {
+    margin-top: 40px;
+}
+.follower-inner-wrap a {
+    float: left;
+    width: 100%;
+}
+.follower-inner-wrap a {
+    display: inline-block;
+    border-radius: 2px;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    margin: 0px 10px 10px 0px; 
+    float: left;
+    width: 47%;
+}
+.follower-inner-wrap .facebook {
+    background: #3b5998;
+}
+.follower-inner-wrap .twitter {
+    background: #1dcaff;
+}
+.follower-inner-wrap .envelope {
+    background: #f7659c;
+}
+.follower-inner-wrap .instagram {
+    background: #3f729b;
+}
+.follower-inner-wrap .linkedin {
+    background: #238cc8;
+}
+.follower-inner-wrap .youtube {
+    background: #e52d27;
+}
+.follower-inner-wrap span {
+    padding-left: 8px;
+    font-size: 14px;
+}
+.clearfix {
+    clear: both;
+}
+.comment-inner-box {
+    display: flex;
+    margin: 15px 0px;
+}
+.comment-inner-box p {
+    margin: 8px 0px 0px 15px;
+    font-size: 13px;
+    color: #696969;
+    line-height: 18px;
+}
+.comments-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+}
+
+/* ====================================== CSS FOR CONTACT FORM ==================================== */
+
+.contact-form .form-group {
+    display: table;
+} 
