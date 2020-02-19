@@ -26,10 +26,10 @@ body {
 	text-decoration: none;
 }
 .mid-header {
-    padding: 25px 0px;
+    padding: 20px 0px;
 }
 .header-icon {
-	padding: 10px 0px;
+	padding: 12px 0px;
 	text-align: right;
 }
 .header-icon a {
@@ -404,6 +404,136 @@ section {
 
 /* ====================================== CSS FOR CONTACT FORM ==================================== */
 
-.contact-form .form-group {
+.maps {
+   margin-bottom: 25px;
+}
+.maps img {
+   width: 100%;
+}
+.form-outer-wrap {
+    margin: 25px 0px; 
+}
+.contact-info {
+    margin: 25px 0px; 
+}
+.contact-info ul {
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 35px;
+}
+.contact-info ul li {
+    margin: 20px 0px;
+}
+.contact-info ul li img {
+    background: #fe803b;
+    padding: 8px;
+    margin-right: 10px; 
+}
+.contact-form {
+    margin-top: 30px;
+}
+.user-name {
     display: table;
+    float: left;
+    width: 50%;
+    padding-right: 10px; 
 } 
+.user-email {
+    display: table;
+    float: left;
+    width: 50%;
+    padding-left: 10px; 
+} 
+.user-subject {
+    display: table;
+    float: left;
+    width: 100%; 
+} 
+.contact-form-icon {
+    display: table-cell !important;
+    padding: 10px 14px;
+    background: #777575;
+    color: #fff;
+    border-radius: 2px;
+    width: 20px;
+}
+.contact-textarea {
+    padding: 15px; 
+    border-radius: 3px;
+    border: 1px solid #ced4da;
+}
+.send-mail {
+    color: #fff;
+    background-image: linear-gradient(90deg,#f84270 0%,#fe803b 100%);
+    border: none;
+    font-weight: 700;
+    padding: 8px 14px;
+}
+.contact-form .form-control {
+    background: #fafafa;
+    font-size: 14px;
+}
+
+/* ====================================== CSS FOR PAGINATION ==================================== */
+
+.page-link {
+    color: #f84270;
+    border: 1px solid lightgray;
+}
+.page-link:hover {
+    color: #fff;
+    background-color: #fe803b;
+    border: 1px solid #fe803b;
+}
+.pagination {
+    width: 28%;
+    margin: 0px auto; 
+    margin-bottom: 40px;
+}
+
+/* ====================================== CSS FOR SPORTS PAGES ==================================== */
+
+.news-category .post-img-wapper img {
+    height: 380px !important;
+}
+.category-popular-news { 
+    background-size: cover;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.news-background-01 {
+    background-image: url("../../assets/images/sports/img-01.jpg");
+}
+.news-background-02 {
+    background-image: url("../../assets/images/sports/img-02.jpg");
+}
+.news-background-03 {
+    background-image: url("../../assets/images/sports/img-03.jpg");
+}
+.news-background-04 {
+    background-image: url("../../assets/images/sports/img-04.jpg");
+}
+.news-background-05 {
+    background-image: url("../../assets/images/sports/img-05.jpg");
+}
+.popular-news-overlay {
+    width: 100%;
+    height: 260px;
+    background: #560c1e8f;
+}
+.popular-news-text {
+    position: absolute;
+    bottom: 30px;
+    padding: 0px 20px;
+    color: #fff;
+}
+.popular-news-text .date-time span {
+    color: #fff;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.popular-news-text .date-time {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 8px;
+}
