@@ -26,7 +26,7 @@ body {
 	text-decoration: none;
 }
 .mid-header {
-    padding: 20px 0px;
+    padding: 18px 0px;
 }
 .header-icon {
 	padding: 12px 0px;
@@ -244,7 +244,7 @@ footer {
 .post-tag-position {
     position: absolute;
     top: 20px;
-    right: 20px;
+    left: 20px;
 }
 .background-green {
     background: green;
@@ -344,8 +344,8 @@ section {
     color: #fe803b;
     border: 2px solid #fe803b;
 }
-.follower {
-    margin-top: 40px;
+.comments {
+    margin-top: 25px;
 }
 .follower-inner-wrap a {
     float: left;
@@ -502,25 +502,14 @@ section {
     margin-top: 20px;
     margin-bottom: 35px;
 }
-.news-background-01 {
-    background-image: url("../../assets/images/sports/img-01.jpg");
-}
-.news-background-02 {
-    background-image: url("../../assets/images/sports/img-02.jpg");
-}
-.news-background-03 {
-    background-image: url("../../assets/images/sports/img-03.jpg");
-}
-.news-background-04 {
-    background-image: url("../../assets/images/sports/img-04.jpg");
-}
-.news-background-05 {
-    background-image: url("../../assets/images/sports/img-05.jpg");
-}
 .popular-news-overlay {
     width: 100%;
     height: 260px;
     background: #560c1e8f;
+    transition: .75s;
+}
+.popular-news-overlay:hover {
+    background: #420e1bde;
 }
 .popular-news-text {
     position: absolute;
@@ -536,4 +525,99 @@ section {
 .popular-news-text .date-time {
     border-bottom: 1px solid #e2e2e2;
     padding-bottom: 8px;
+}
+.popular-news-text .post-tag  {
+    margin-bottom: 12px;
+}
+.sports-background-01 {
+    background-image: url("../../assets/images/sports/img-01.jpg");
+}
+.sports-background-02 {
+    background-image: url("../../assets/images/sports/img-02.jpg");
+}
+.sports-background-03 {
+    background-image: url("../../assets/images/sports/img-03.jpg");
+}
+.sports-background-04 {
+    background-image: url("../../assets/images/sports/img-04.jpg");
+}
+.sports-background-05 {
+    background-image: url("../../assets/images/sports/img-05.jpg");
+}
+
+/* ====================================== CSS FOR EDUCATION PAGES ==================================== */
+
+.education-background-01 {
+    background-image: url("../../assets/images/education/img-01.jpg");
+}
+.education-background-02 {
+    background-image: url("../../assets/images/education/img-02.jpg");
+}
+.education-background-03 {
+    background-image: url("../../assets/images/education/img-03.jpg");
+}
+.education-background-04 {
+    background-image: url("../../assets/images/education/img-04.jpg");
+}
+.education-background-05 {
+    background-image: url("../../assets/images/education/img-05.jpg");
+}
+
+/* ====================================== CSS FOR POLITICS PAGES ==================================== */
+
+.politics-background-01 {
+    background-image: url("../../assets/images/politics/img-01.jpg");
+}
+.politics-background-02 {
+    background-image: url("../../assets/images/politics/img-02.jpg");
+}
+.politics-background-03 {
+    background-image: url("../../assets/images/politics/img-03.jpg");
+}
+.politics-background-04 {
+    background-image: url("../../assets/images/politics/img-04.jpg");
+}
+.politics-background-05 {
+    background-image: url("../../assets/images/politics/img-05.jpg");
+}
+
+/* ====================================== CSS FOR POST DETAIL PAGE ==================================== */
+
+.featured-image img {
+    width: 100%;
+    height: 420px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.post-detail .date-time {
+    border-bottom: 1px solid #e2e2e2;
+}
+.post-detail .date-time span i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+.post-detail small, .small {
+    font-size: 90%;
+}
+.post-author {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.double-quote {
+    margin-bottom: 15px;
+}
+blockquote.wp-block-quote {
+    padding: 30px;
+    padding-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    border-left: 0;
+    text-align: center;
+    font-weight: 700;
+}
+.overview-summary {
+    margin: 45px 0px;
 }
