@@ -245,18 +245,6 @@ footer {
     position: absolute;
     top: 20px;
     left: 20px;
-}
-.background-green {
-    background: green;
-} 
-.background-primary {
-    background: #f84270;
-} 
-.background-secondry {
-    background: #fe803b;
-} 
-.background-blue {
-    background: #007bff;
 } 
 
 /* ====================================== CSS FOR INDEX PAGE ==================================== */
@@ -278,13 +266,28 @@ section {
     padding: 8px;
 }
 .post-img-wapper {
-    margin: 20px 0px; 
+    margin: 20px 0px 10px 0px; 
     position: relative;
     margin-bottom: 35px;
+    overflow: hidden;
+}
+.post-outer-wrap {
+    width: 100%;
+    height: 225px;
+    overflow: hidden;
 }
 .post-img-wapper img {
     width: 100%;
-    height: 200px;
+    transform: scale(1);
+    transition: .5s;
+}
+.post-img-wapper:hover img {
+    transform: scale(1.05);
+}
+.post-img-overflow {
+    overflow: hidden;
+    width: 100%;
+    height: 380px;
 }
 .date-time {
     border-bottom: 2px solid #e2e2e2;
@@ -361,24 +364,6 @@ section {
     float: left;
     width: 47%;
 }
-.follower-inner-wrap .facebook {
-    background: #3b5998;
-}
-.follower-inner-wrap .twitter {
-    background: #1dcaff;
-}
-.follower-inner-wrap .envelope {
-    background: #f7659c;
-}
-.follower-inner-wrap .instagram {
-    background: #3f729b;
-}
-.follower-inner-wrap .linkedin {
-    background: #238cc8;
-}
-.follower-inner-wrap .youtube {
-    background: #e52d27;
-}
 .follower-inner-wrap span {
     padding-left: 8px;
     font-size: 14px;
@@ -388,18 +373,18 @@ section {
 }
 .comment-inner-box {
     display: flex;
-    margin: 15px 0px;
+    margin: 20px 0px;
 }
 .comment-inner-box p {
-    margin: 8px 0px 0px 15px;
+    margin: 4px 0px 0px 15px;
     font-size: 13px;
     color: #696969;
     line-height: 18px;
 }
 .comments-img {
-    width: 70px;
-    height: 70px;
-    border-radius: 4px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
 /* ====================================== CSS FOR CONTACT FORM ==================================== */
@@ -467,7 +452,8 @@ section {
     background-image: linear-gradient(90deg,#f84270 0%,#fe803b 100%);
     border: none;
     font-weight: 700;
-    padding: 8px 14px;
+    padding: 10px 10px;
+    font-size: 12px;
 }
 .contact-form .form-control {
     background: #fafafa;
@@ -476,16 +462,16 @@ section {
 
 /* ====================================== CSS FOR PAGINATION ==================================== */
 
-.page-link {
+.news-category .page-link {
     color: #f84270;
     border: 1px solid lightgray;
 }
-.page-link:hover {
+.news-category .page-link:hover {
     color: #fff;
     background-color: #fe803b;
     border: 1px solid #fe803b;
 }
-.pagination {
+.news-category .pagination {
     width: 28%;
     margin: 0px auto; 
     margin-bottom: 40px;
@@ -493,14 +479,24 @@ section {
 
 /* ====================================== CSS FOR SPORTS PAGES ==================================== */
 
-.news-category .post-img-wapper img {
-    height: 380px !important;
+.popular-news-outer-wrapper {
+    margin-top: 20px;
+    margin-bottom: 32px;
+    position: relative;
+}
+.popular-news-inner-wrapper {
+    overflow: hidden;
 }
 .category-popular-news { 
     background-size: cover;
     position: relative;
-    margin-top: 20px;
-    margin-bottom: 35px;
+}
+.popular-news-animate {
+    transform: scale(1);
+    transition: .25s;
+}
+.popular-news-animate:hover {
+    transform: scale(1.1);
 }
 .popular-news-overlay {
     width: 100%;
@@ -509,13 +505,17 @@ section {
     transition: .75s;
 }
 .popular-news-overlay:hover {
-    background: #420e1bde;
+    background: #420e1b96;
 }
 .popular-news-text {
     position: absolute;
     bottom: 30px;
-    padding: 0px 20px;
+    padding: 0px 22px;
     color: #fff;
+}
+.popular-news-text h5 a {
+    color: #fff;
+    text-decoration: none;
 }
 .popular-news-text .date-time span {
     color: #fff;
@@ -611,13 +611,48 @@ section {
 blockquote.wp-block-quote {
     padding: 30px;
     padding-left: 40px;
-    margin-top: 30px;
+    margin-top: 30px
     margin-bottom: 30px;
     position: relative;
     border-left: 0;
     text-align: center;
     font-weight: 700;
 }
-.overview-summary {
-    margin: 45px 0px;
+.post-detail ul li {
+    padding: 5px 0px;
 }
+.overview-summary {
+    margin: 30px 0px;
+}
+
+/* ====================================== CSS FOR POST REVIEWS ==================================== */
+
+
+.review {
+    margin-top: 50px;
+}
+.reviewer-detail {
+    display: flex;
+    margin-top: 20px;
+}
+.reviewer-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+.review-ratting span i {
+    color: #fe803b;
+} 
+.review-title {
+    padding-top: 10px;
+}
+.review-pagination .page-link {
+    padding: 0.5rem 0.5rem;
+    color: #fe803b;
+    background-color: #fff;
+    border: none;
+}
+
+
+
